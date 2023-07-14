@@ -1,0 +1,57 @@
+/// section footer
+.footer {
+  margin-top: auto;
+  background: $black-2;
+  padding: 30px 0 14px;
+  margin-top: 100px;
+  position: relative;
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    &-link {
+      color: $primary;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      @include transition;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    &-copy {
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+  h6 {
+    font-weight: 400;
+    color: $gray;
+  }
+  &__shadow {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
