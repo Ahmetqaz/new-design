@@ -4,6 +4,7 @@
   }
 }
 @media (max-width: 1440px) {
+  @include components-1440;
   @include header-1440;
   @include index-1440;
 }

@@ -297,6 +297,11 @@ p {
 }
 
 @mixin typography-1024 {
+  h3 {
+    &._sm {
+      font-size: 3rem;
+    }
+  }
   h5 {
     font-size: 1.7rem;
   }

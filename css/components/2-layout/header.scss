@@ -204,6 +204,11 @@
         z-index: 2;
       }
     }
+    &._sm {
+      .burger {
+        display: none;
+      }
+    }
   }
   .nav {
     position: fixed;
@@ -283,12 +288,11 @@
 }
 @mixin header-768 {
   .header {
-    padding: 1.5rem 0;
+    padding: 15px 0;
   }
   .nav {
     &__inner {
       padding: 40px 15px;
-
     }
   }
 }

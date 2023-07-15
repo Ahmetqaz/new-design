@@ -494,14 +494,30 @@
   }
 }
 
+@mixin components-1440 {
+  .input {
+    font-size: 1.2rem;
+  }
+  .button {
+    &--primary {
+      font-size: 1.2rem;
+    }
+  }
+}
 @mixin components-1024 {
   .box {
     gap: 1.2rem;
   }
   .button {
+    &--primary {
+      font-size: 1.4rem;
+    }
     &--social {
       font-size: 14px;
     }
+  }
+  .input {
+    font-size: 1.4rem;
   }
 }
 @mixin components-768 {
