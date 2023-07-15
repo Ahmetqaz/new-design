@@ -2,14 +2,13 @@
 .footer {
   margin-top: auto;
   background: $black-2;
-  padding: 30px 0 14px;
-  margin-top: 100px;
+  padding: 1.5rem 0 0.7rem;
   position: relative;
   &__inner {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1rem;
     &-link {
       color: $primary;
       font-size: 20px;
@@ -24,12 +23,12 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      gap: 15px;
+      gap: 0.75rem;
     }
     &-social {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 0.7rem;
     }
     &-copy {
       font-size: 14px;
@@ -52,6 +51,60 @@
     img {
       width: 100%;
       object-fit: cover;
+    }
+  }
+}
+@mixin footer-1024 {
+  .footer {
+    &__inner {
+      &-link {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@mixin footer-768 {
+  .footer {
+    &__inner {
+      &-link {
+        font-size: 15px;
+      }
+      &-copy {
+        font-size: 12px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@mixin footer-580 {
+  .footer {
+    &__inner {
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@mixin footer-460 {
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 300px;
+      margin: 0 auto;
+      &-container {
+        width: calc(50% - 15px);
+        &:last-child {
+          align-items: flex-end;
+        }
+      }
+      &-copy {
+        width: 100%;
+        order: 1;
+        text-align: center;
+      }
     }
   }
 }

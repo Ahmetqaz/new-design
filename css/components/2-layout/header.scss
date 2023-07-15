@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 26px 0;
+  padding: 1.3rem 0;
   z-index: 5;
   transition: 0.2s ease-out;
   transition-property: opacity, transform, padding;
@@ -12,15 +12,15 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 30px;
+    gap: 1.5rem;
     z-index: 2;
     &-logo {
       display: flex;
       align-items: center;
       justify-content: center;
       .logo {
-        font-size: 20px;
-        width: 17.5em;
+        font-size: 1rem;
+        width: 17.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,12 +37,17 @@
   }
   &.sticky {
     position: fixed;
-    padding: 15px 0;
+    padding: 0.75rem 0;
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
     background: $primary;
     .logo {
-      font-size: 16px;
+      width: 15rem;
+    }
+    .header {
+      &__inner {
+        align-items: center;
+      }
     }
   }
   h3 {
@@ -60,13 +65,13 @@
     &-group {
       display: flex;
       align-items: center;
-      gap: 55px;
+      gap: 2.75rem;
     }
     &-link {
       position: relative;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0.4rem;
       //font
       color: $white;
       font-family: $font-primary;
@@ -90,7 +95,7 @@
           height: 4px;
           background: $green;
           position: absolute;
-          bottom: -8px;
+          bottom: -0.4rem;
           left: 0;
           opacity: 0;
           transition: 0.3s ease-out;
@@ -175,13 +180,20 @@
   }
 }
 
-@mixin header-1025 {
+@mixin header-1440 {
+  .nav {
+    &__inner {
+      &-group {
+        gap: 2rem;
+      }
+    }
+  }
+}
+@mixin header-1024 {
   .header {
-    padding: 25px 0;
-
     &__inner {
       justify-content: space-between;
-
+      align-items: center;
       &-logo {
         padding-right: 20px;
         border-right: 2px solid rgba($white, 0.27);
@@ -211,8 +223,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 35%;
-      min-width: 280px;
+      width: 25%;
+      min-width: 220px;
       height: 100%;
       flex-direction: column;
       align-items: flex-start;
@@ -228,7 +240,7 @@
       &-group {
         flex-direction: column;
         align-items: flex-start;
-        padding: 25px 0;
+        padding: 1rem 0;
         gap: 8px;
         color: $black;
         border-top: 1px solid $white;
@@ -240,15 +252,12 @@
       }
       &-link {
         color: $black;
-
-        &:after {
-          left: 0;
-          top: 50%;
-          width: 2px;
-          height: 80%;
-          transform: translateY(-50%);
+        font-size: 16px;
+        .linkText {
+          &:after {
+            height: 2px;
+          }
         }
-
         &:hover {
           &:after {
             width: 2px;
@@ -269,6 +278,41 @@
         transition: 0.3s ease-in-out 0.05s;
         transform: translate(0);
       }
+    }
+  }
+}
+@mixin header-768 {
+  .header {
+    padding: 1.5rem 0;
+  }
+  .nav {
+    &__inner {
+      padding: 40px 15px;
+
+    }
+  }
+}
+@mixin header-580 {
+  .burger {
+    width: 20px;
+    height: 14px;
+    &::after {
+      height: 2px;
+    }
+    &::before {
+      height: 2px;
+    }
+  }
+}
+@mixin header-390 {
+  .burger {
+    width: 18px;
+    height: 12px;
+    &::after {
+      height: 2px;
+    }
+    &::before {
+      height: 2px;
     }
   }
 }

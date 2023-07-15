@@ -3,15 +3,15 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 100%;
-  padding-top: 162px;
+  padding-top: 8.1rem;
   position: relative;
 
   &__bg {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -5px;
     width: 62%;
-    max-width: 1174px;
+    max-width: 58.7rem;
     height: 100%;
     overflow: hidden;
     img {
@@ -23,20 +23,20 @@
   }
 }
 .autoContainer {
-  max-width: 1880px;
+  max-width: 95rem;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 3rem;
 }
 .input {
   display: flex;
   width: 100%;
-  font-size: 20px;
+  font-size: 1rem;
 
   input,
   textarea,
   &__selected {
     padding: 0.5em 0.6em;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     width: 100%;
     background-color: $white-2;
     border: 2px solid $white-2;
@@ -60,7 +60,7 @@
   }
   &--textarea {
     textarea {
-      min-height: 154px;
+      min-height: 7.7rem;
     }
   }
 }
@@ -74,17 +74,17 @@
   color: $black;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 1;
   transition: all 0.3s ease;
 
   &--primary {
     font-family: $font-inter;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 0.5em 1em;
     color: $white;
     background: $secondary;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     font-weight: 400;
     &:hover {
       background: $white;
@@ -94,6 +94,7 @@
   }
   &--social {
     border-radius: 50%;
+    font-size: 16px;
     width: 1.88em;
     height: 1.88em;
     .image {
@@ -154,7 +155,7 @@
   color: $black;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.75rem;
   line-height: 1;
 }
 .checkbox {
@@ -431,5 +432,93 @@
   &--primary {
     background: $primary;
     color: $white;
+  }
+}
+.link {
+  font-size: 1rem;
+  line-height: 1.2em;
+  &__badge {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  a {
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  h2 {
+    color: $secondary;
+  }
+  &._sm {
+    h3 {
+      font-weight: 600;
+      color: $secondary;
+      font-family: $font-secondary;
+    }
+    p {
+      color: $secondary;
+      line-height: 1.4em;
+      font-weight: 500;
+      font-family: $font-secondary;
+    }
+  }
+}
+.video {
+  position: relative;
+  &__content {
+    padding-bottom: 133%;
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__border {
+    position: absolute;
+    top: -1.15rem;
+    left: -4.2rem;
+    width: calc(100% + 8.55rem);
+    height: calc(100% + 3.2rem);
+    z-index: 1;
+    pointer-events: none;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@mixin components-1024 {
+  .box {
+    gap: 1.2rem;
+  }
+  .button {
+    &--social {
+      font-size: 14px;
+    }
+  }
+}
+@mixin components-768 {
+  .main {
+    &__bg {
+      right: -10rem;
+    }
+  }
+  .text {
+    &--primary {
+    }
+  }
+}
+@mixin components-580 {
+  .button {
+    &--social {
+      font-size: 12px;
+    }
   }
 }
