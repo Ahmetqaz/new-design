@@ -2,12 +2,6 @@
   html {
     font-size: 1vw;
   }
-  .main {
-    &__bg {
-      left: unset;
-      right: -5px;
-    }
-  }
 }
 @media (max-width: 1660px) {
   @include components-1660;
