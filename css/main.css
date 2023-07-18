@@ -324,16 +324,16 @@ svg {
 .main__bg {
   position: absolute;
   top: 0;
-  right: -5px;
-  width: 62%;
-  max-width: 58.7rem;
+  left: 40%;
+  width: auto;
   height: 100%;
+  min-height: 3767px;
   overflow: hidden;
   z-index: -1;
   pointer-events: none;
 }
 .main__bg img {
-  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1531,20 +1531,38 @@ svg {
   html {
     font-size: 1vw;
   }
+
+  .main__bg {
+    left: unset;
+    right: -5px;
+  }
+}
+@media (max-width: 1660px) {
+  .main__bg {
+    left: 38%;
+  }
 }
 @media (max-width: 1440px) {
+  .main__bg {
+    left: 35%;
+  }
+
   .input {
     font-size: 1.2rem;
   }
+
   .button--primary {
     font-size: 1.2rem;
   }
+
   .nav__inner-group {
     gap: 2rem;
   }
+
   .skillsItem {
     max-width: 20rem;
   }
+
   .hero .box {
     gap: 0.7rem;
   }
@@ -1559,29 +1577,43 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
+
+  .main__bg {
+    left: 39%;
+  }
 }
 @media (max-width: 1024px) {
   .autoContainer {
     padding: 0 30px;
   }
+
   h3._sm {
     font-size: 3rem;
   }
+
   h5 {
     font-size: 1.7rem;
   }
+
   .box {
     gap: 1.2rem;
   }
+
   .button--primary {
     font-size: 1.4rem;
   }
   .button--social {
     font-size: 14px;
   }
+
   .input {
     font-size: 1.4rem;
   }
+
+  .main__bg {
+    left: 40%;
+  }
+
   .header__inner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1602,6 +1634,7 @@ svg {
   .header._sm .burger {
     display: none;
   }
+
   .nav {
     position: fixed;
     top: 0;
@@ -1691,9 +1724,11 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+
   .whyUs__inner .vide {
     max-width: 27rem;
   }
+
   .skills__inner-row {
     gap: 2.8rem 2rem;
     -webkit-box-pack: start;
@@ -1704,6 +1739,7 @@ svg {
     max-width: 28rem;
     width: calc(33.3% - 0.5rem);
   }
+
   .news {
     padding: 3rem 0 100px;
   }
@@ -1723,12 +1759,17 @@ svg {
   .newsItem p {
     font-size: 14px;
   }
+
+  .hero {
+    min-height: 460px;
+  }
   .hero .box._sm p {
     font-size: 1.8rem;
   }
   .hero .link {
     font-size: 1.6rem;
   }
+
   .footer__inner-link {
     font-size: 16px;
   }
@@ -1742,18 +1783,25 @@ svg {
   html {
     font-size: 1.5vw;
   }
+
   .autoContainer {
     padding: 0 15px;
   }
+
   .main__bg {
-    right: -10rem;
+    right: unset;
+    min-height: auto;
+    left: 60%;
   }
+
   .header {
     padding: 15px 0;
   }
+
   .nav__inner {
     padding: 40px 15px;
   }
+
   .hero {
     padding: 2rem 0 4rem;
     height: auto;
@@ -1804,6 +1852,7 @@ svg {
   .hero._lg .hero__inner {
     gap: 4rem;
   }
+
   .whyUs__inner-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1829,10 +1878,12 @@ svg {
   .whyUs__inner .video .ratioImage {
     padding-bottom: 140%;
   }
+
   .skillsItem {
     max-width: 20rem;
     width: calc(33% - 1.2rem);
   }
+
   .blog__inner {
     gap: 4rem;
   }
@@ -1874,6 +1925,7 @@ svg {
   .blog__inner h2 {
     width: 100%;
   }
+
   .news {
     padding: 2rem 0 70px;
   }
@@ -1896,6 +1948,7 @@ svg {
   .newsItem p {
     font-size: 14px;
   }
+
   .footer__inner-link {
     font-size: 15px;
   }
@@ -1910,12 +1963,15 @@ svg {
   html {
     font-size: 2vw;
   }
+
   h2 {
     font-weight: 600;
   }
+
   .button--social {
     font-size: 12px;
   }
+
   .burger {
     width: 20px;
     height: 14px;
@@ -1926,10 +1982,12 @@ svg {
   .burger::before {
     height: 2px;
   }
+
   .skillsItem {
     max-width: 25rem;
     width: calc(50% - 1.2rem);
   }
+
   .footer__inner-link {
     font-size: 14px;
   }
@@ -1957,6 +2015,7 @@ svg {
             order: 1;
     text-align: center;
   }
+
   .whyUs__inner .video {
     width: 100%;
     margin: 0 auto;
@@ -1976,9 +2035,11 @@ svg {
   p._lg {
     font-size: 2rem;
   }
+
   h5 {
     font-size: 14px;
   }
+
   .burger {
     width: 18px;
     height: 12px;
@@ -1989,11 +2050,13 @@ svg {
   .burger::before {
     height: 2px;
   }
+
   .skillsItem {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
   }
+
   .blog__inner-button {
     font-size: 2rem;
   }

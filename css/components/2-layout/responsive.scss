@@ -2,6 +2,15 @@
   html {
     font-size: 1vw;
   }
+  .main {
+    &__bg {
+      left: unset;
+      right: -5px;
+    }
+  }
+}
+@media (max-width: 1660px) {
+  @include components-1660;
 }
 @media (max-width: 1440px) {
   @include components-1440;
@@ -14,6 +23,7 @@
   .autoContainer {
     padding: 0 40px;
   }
+  @include components-1160;
 }
 @media (max-width: 1024px) {
   .autoContainer {
@@ -44,7 +54,7 @@
 }
 @media (max-width: 580px) {
   html {
-    font-size:2vw;
+    font-size: 2vw;
   }
   @include typography-580;
   @include components-580;
@@ -55,7 +65,6 @@
 @media (max-width: 460px) {
   @include footer-460;
   @include index-460;
-
 }
 
 @media (max-width: 390px) {
