@@ -1791,7 +1791,9 @@ svg {
   .main__bg {
     right: unset;
     min-height: auto;
-    left: 60%;
+    left: 100%;
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
 
   .header {

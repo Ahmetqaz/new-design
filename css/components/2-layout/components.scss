@@ -549,7 +549,8 @@
     &__bg {
       right: unset;
       min-height: auto;
-      left: 60%;
+      left: 100%;
+      transform: translateX(-30%);
     }
   }
   .text {
