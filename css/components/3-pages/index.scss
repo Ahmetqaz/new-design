@@ -193,16 +193,18 @@
     &-row {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
     }
     &-content {
       width: calc(42% - 0.5rem);
     }
     &-button {
       font-size: 1em;
-      line-height: 1em;
+      line-height: 1.4em;
       font-weight: 500;
       position: relative;
       color: $white;
+      font-family: $font-secondary;
       &:after {
         content: "";
         width: 0;
@@ -237,6 +239,7 @@
       width: calc(58% - 0.5rem);
       max-width: 40rem;
       &-text {
+        font-size: 1.75rem;
         margin-bottom: 1rem;
         font-weight: 400;
         color: $white;
@@ -245,6 +248,19 @@
     &-info {
       width: 100%;
       font-weight: 400;
+    }
+    &-image {
+      width: calc(58% - 0.5rem);
+      max-width: 36rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
     }
   }
   h2 {
@@ -426,6 +442,11 @@
       &-row {
         flex-direction: column;
         gap: 5rem;
+      }
+      &-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
       }
       h2 {
         width: 100%;

@@ -104,14 +104,6 @@
       &:hover {
         .linkText {
           &:after {
-            opacity: 0.4;
-            width: 100%;
-          }
-        }
-      }
-      &.active {
-        .linkText {
-          &:after {
             width: 100%;
             opacity: 1;
           }
