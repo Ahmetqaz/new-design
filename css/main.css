@@ -1,5 +1,7 @@
 @import "./animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @-webkit-keyframes zoomInCenter {
   from {
     opacity: 0;
@@ -146,188 +148,6 @@
           animation-timing-function: ease-in-out;
 }
 
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-BlackItalic.woff2") format("woff2"), url("../font-text/WorkSans-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Black.woff2") format("woff2"), url("../font-text/WorkSans-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Bold.woff2") format("woff2"), url("../font-text/WorkSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-BoldItalic.woff2") format("woff2"), url("../font-text/WorkSans-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-ExtraBold.woff2") format("woff2"), url("../font-text/WorkSans-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-ExtraBoldItalic.woff2") format("woff2"), url("../font-text/WorkSans-ExtraBoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Italic.woff2") format("woff2"), url("../font-text/WorkSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Italic.woff2") format("woff2"), url("../font-text/WorkSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Medium.woff2") format("woff2"), url("../font-text/WorkSans-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-MediumItalic.woff2") format("woff2"), url("../font-text/WorkSans-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Regular.woff2") format("woff2"), url("../font-text/WorkSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-SemiBold.woff2") format("woff2"), url("../font-text/WorkSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-SemiBoldItalic.woff2") format("woff2"), url("../font-text/WorkSans-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("../font-text/WorkSans-Regular.woff2") format("woff2"), url("../font-text/WorkSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-Black.woff2") format("woff2"), url("../font-text/Poppins-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-BlackItalic.woff2") format("woff2"), url("../font-text/Poppins-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-Bold.woff2") format("woff2"), url("../font-text/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-BoldItalic.woff2") format("woff2"), url("../font-text/Poppins-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-ExtraBold.woff2") format("woff2"), url("../font-text/Poppins-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../font-text/Poppins-ExtraBoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-Italic.woff2") format("woff2"), url("../font-text/Poppins-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-Medium.woff2") format("woff2"), url("../font-text/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-MediumItalic.woff2") format("woff2"), url("../font-text/Poppins-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-Regular.woff2") format("woff2"), url("../font-text/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-SemiBold.woff2") format("woff2"), url("../font-text/Poppins-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font-text/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../font-text/Poppins-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
 /* Typography */
 h1 {
   font-size: 5rem;
@@ -337,6 +157,7 @@ h2 {
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   line-height: 1em;
+  font-weight: 700;
 }
 h2._sm {
   font-size: 3.75rem;
@@ -982,7 +803,7 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .box h2 {
   color: #fd3400;
@@ -1259,10 +1080,6 @@ svg {
   transition: 0.3s ease-out;
 }
 .nav__inner-link:hover .linkText:after {
-  opacity: 0.4;
-  width: 100%;
-}
-.nav__inner-link.active .linkText:after {
   width: 100%;
   opacity: 1;
 }
@@ -1623,16 +1440,20 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .blog__inner-content {
   width: calc(42% - 0.5rem);
 }
 .blog__inner-button {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.4em;
   font-weight: 500;
   position: relative;
   color: #fff;
+  font-family: "Work Sans", sans-serif;
 }
 .blog__inner-button:after {
   content: "";
@@ -1672,6 +1493,7 @@ svg {
   max-width: 40rem;
 }
 .blog__inner-menu-text {
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   font-weight: 400;
   color: #fff;
@@ -1679,6 +1501,26 @@ svg {
 .blog__inner-info {
   width: 100%;
   font-weight: 400;
+}
+.blog__inner-image {
+  width: calc(58% - 0.5rem);
+  max-width: 36rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.blog__inner-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .blog h2 {
   color: #fd3400;
@@ -2047,6 +1889,11 @@ svg {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5rem;
+  }
+  .blog__inner-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .blog__inner h2 {
     width: 100%;
